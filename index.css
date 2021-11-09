@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.end-credits {
+    position: relative;
+    color: #feda4a;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    min-height: 100%;
+    width: 100%;
+}
+span {
+    display: block;
+}
+
+.marquee-wrapper {
+    transform: translate(0, 100%);
+    position: relative;
+    animation: crawl 30s linear;
+    min-height: 100%;
+}
+
+@keyframes crawl {
+    0% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, -200%);
+    }
+}
+
+.title {
+    display: block;
+    font-size: 128px;
+}
+
+.title:after {
+    content: '';
+    height: 1px;
+    background: #fff;
+    margin: 20px 100px;
+    display: block;
+    font-weight: bold;
+}
+
+.sub-title {
+    margin-bottom: 60px;
+    font-style: italic;
+    font-size: 72px;
+}
+
+#credits_container > div {
+    margin-bottom: 60px;
+}
+
+.group-title {
+    font-size: 48px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#credit_list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* todo get chatter color/profile picture*/
+.credit-container {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.credit-container:nth-child(3n + 1) {
+    text-align: left;
+}
+
+.credit-container:nth-child(3n + 2) {
+    text-align: right;
+}
+
+.credit-text {
+    background: rgba(255,255,255,0.3);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}

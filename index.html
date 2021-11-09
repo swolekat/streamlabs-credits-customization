@@ -1,0 +1,128 @@
+<html class="wf-firasans-n4-active wf-active"><head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <style id="theme"></style>
+
+    <script>
+        //function stubs for xsplit beta
+        window.SetVolume           = function() {};
+        window.OnSceneLoad         = function() {};
+        window.setBackGroundColor  = function() {};
+        window.GetPlayState        = function() {};
+        window.UpdateLocalProperty = function() {};
+        window.SetEvent            = function() {};
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans%7CFira+Sans:undefined"><style>
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        overflow: hidden;
+    }
+</style></head>
+
+
+
+<body data-whatinput="mouse">
+<input type="hidden" id="app_url" value="https://streamlabs.com">
+
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<section class="end-credits" id="custom_html" style="color: rgb(255, 255, 255); font-family: &quot;Fira Sans&quot;; font-size: 30px;"><div class="marquee-wrapper" id="end_credits_container" style="animation-duration: 37s; animation-delay: 1s; animation-iteration-count: infinite;">
+    <span class="title">Credits</span>
+    <span class="sub-title">Thanks for supporting this big ol cat</span>
+
+    <!-- container will contain list of credit items -->
+    <div id="credits_container"><div>
+        <span class="group-title">Strays We Found on the Side of the Road</span>
+        <div id="credit_list">
+  <span class="credit-container">
+    <span class="credit-text">Follower 1</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Follower 2</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Follower 3</span>
+  </span>
+        </div>
+    </div><div>
+        <span class="group-title">Gym Members</span>
+        <div id="credit_list">
+  <span class="credit-container">
+    <span class="credit-text">Susbcriber 1</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Subscriber 2</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Subscriber 3</span>
+  </span>
+        </div>
+    </div><div>
+        <span class="group-title">Equipment Buyers</span>
+        <div id="credit_list">
+  <span class="credit-container">
+    <span class="credit-text">Bit Donor 1</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Bit Donor 2</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Bit Donor 3</span>
+  </span>
+        </div>
+    </div><div>
+        <span class="group-title">Staff</span>
+        <div id="credit_list">
+  <span class="credit-container">
+    <span class="credit-text">Moderator 1</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Moderator 2</span>
+  </span>
+
+            <span class="credit-container">
+    <span class="credit-text">Moderator 3</span>
+  </span>
+        </div>
+    </div></div>
+</div>
+
+    <!-- enabled types will be appended in marque -->
+    <script type="text/template" id="credit_item">
+        <div>
+            <span class="group-title">{label}</span>
+            <div id="credit_list"></div>
+        </div>
+    </script>
+
+    <!-- items will be added to credit list -->
+    <!-- list item is invidual donor, follow etc -->
+    <script type="text/template" id="list_item">
+        <span class="credit-container">
+    <span class="credit-text">{value}</span>
+  </span>
+    </script><script>// Please use event listeners to run functions.
+    document.addEventListener('onLoad', function(obj) {
+        // obj will be empty for credits widget
+        // this will fire only once when the widget loads
+    });
+
+    document.addEventListener('onEventReceived', function(obj) {
+        // obj will contain information about the event
+
+    });</script></section>
+
+<link rel="stylesheet" href="./index.css" />
+
+</body></html>
